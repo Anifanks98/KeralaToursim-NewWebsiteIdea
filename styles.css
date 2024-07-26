@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #000;
+  color: #fff; */
+  user-select: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav {
+  height: 100px;
+  width: 100%;
+  /* background-color: rgba(0, 57, 115, 1); */
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 105px;
+  position: fixed;
+  z-index: 99;
+}
+.nav h3 #login::after {
+  content: "👤";
+  position: fixed;
+  color: #fff;
+}
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+}
+.cursor {
+  height: 10px;
+  width: 10px;
+  background-color: #5d8c7cdc;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 98;
+}
+.cursor-blur {
+  height: 300px;
+  width: 300px;
+  background-color: rgba(155, 205, 191, 0.641);
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(50px);
+  z-index: 8;
+  opacity: 30%;
+}
+.nav img {
+  height: 35px;
+}
+
+.main {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.page1 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.page1 h2 {
+  font-size: 110px;
+  font-weight: 800;
+  opacity: 60%;
+  position: relative;
+}
+
+.page1 h2::before {
+  content: "KERALA Awaits";
+  position: absolute;
+  color: #fff;
+  top: -2px;
+  left: -3px;
+  -webkit-text-stroke: 1px rgba(78, 211, 7, 0.4);
+  z-index: -1;
+  opacity: 60%;
+}
+
+.page1 p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.page1 button a {
+  text-decoration: none;
+  color: rgb(159, 216, 44);
+}
+.page1 button {
+  margin-top: 30px;
+  font-size: 1rem;
+  background-color: none;
+  opacity: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  border-radius: 5px;
+  padding: 10px;
+}
+.page1 button:hover {
+  background-color: transparent;
+  font-weight: 900;
+}
+
+.page2 {
+  height: 20vh;
+  width: 100%;
+  z-index: 10;
+}
+
+.scroller {
+  /* background-color: aquamarine; */
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 10;
+}
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+#scroller-in {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 30s linear 2s infinite;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+}
+
+.scroller h4 {
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-right: 20px;
+  -webkit-text-stroke: 2px rgba(111, 237, 44, 0.851);
+  color: transparent;
+  transition: all linear 0.2s;
+  cursor: pointer;
+}
+
+.scroller h4:hover {
+  color: rgba(111, 237, 44, 0.851);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+
+.top-container {
+  height: 100vh;
+  width: 100%;
+}
+.top-destination {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+  position: relative;
+}
+
+.top-destination img {
+  height: 270px;
+  width: 480px;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.tile {
+  width: 40%;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.tile h5 {
+  font-size: 1.2em;
+}
+
+.headingtop h3 {
+  font-size: 2.5rem;
+  color: #a4c3b2;
+  text-align: center;
+}
+
+.things-todo-heading {
+  font-size: 2rem;
+  color: #a4c3b2;
+  text-align: center;
+  position: relative;
+}
+
+.cards-container {
+  /* background-color: blue; */
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  z-index: 10;
+}
+.card {
+  height: 80%;
+  width: 23%;
+  /* background-color: aqua; */
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all ease 0.2s;
+  z-index: 11;
+  position: relative;
+}
+
+#card1 {
+  background-image: url(https://www.keralatourism.org/images/homecontentimage/desktop/ayurveda6.jpg);
+}
+
+#card2 {
+  background-image: url("https://www.keralatourism.org/images/homecontentimage/desktop/scuba-diving1.jpg");
+}
+#card3 {
+  background-image: url("https://www.keralatourism.org/images/homecontentimage/desktop/Paragliding.jpg");
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#bbf2bf, #95c11e);
+  padding: 20px;
+  padding-top: 185px;
+  opacity: 0;
+  transition: all ease 0.2s;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: rotate3d(-1, 1, 0, 15deg);
+}
+
+.overlay h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 750;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1em;
+}
+
+.banner-container {
+  height: 50vh;
+  background: linear-gradient(#679436, #7cb441);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1px;
+  border-radius: 11px;
+  box-shadow: -5px -7px 10px rgba(103, 148, 54, 0.264);
+}
+
+.banner-container h4 {
+  width: 50%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.795);
+  text-align: center;
+  font-family: "Georama", sans-serif;
+}
+
+.banner-container img {
+  height: 100%;
+  width: 30%;
+  opacity: 70%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.page3 {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' style='font-size: 50px'><text y='50'>🔦</text></svg>"),
+    auto;
+  z-index: 10;
+}
+
+.page3 > h3 {
+  font-size: 3em;
+  font-weight: 700;
+  font-family: "Caveat", cursive;
+}
+
+.page3 > h3 > span {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: "Caveat", cursive;
+  padding: 30px;
+  color: whitesmoke;
+}
+.page3 > h3 > span:hover {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: "Caveat", cursive;
+  color: whitesmoke;
+  animation: jiggle 0.5s infinite;
+  display: inline-block;
+}
+
+@keyframes jiggle {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+.page3 img {
+  position: absolute;
+  height: 60px;
+}
+
+.page3 #colon1 {
+  left: 22%;
+  top: 30%;
+  transform: rotate(15deg);
+}
+.page3 #colon2 {
+  right: 12%;
+  bottom: 29%;
+  transform: rotate(15deg);
+}
