@@ -4,3 +4,5 @@ HTML,CSS,JS Used
 
 ![image](https://github.com/user-attachments/assets/c5a21844-b79a-474a-96de-2910586a3c40)
 
+
+soon to be deployed on netlify
