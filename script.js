@@ -24,7 +24,7 @@ h4all.forEach(function (elem) {
 });
 
 gsap.to(".nav", {
-  backgroundColor: "#207837",
+  backgroundColor: "#066014",
   duration: 0.6,
   height: "85px",
   scrollTrigger: {
@@ -47,5 +47,81 @@ gsap.to(".main", {
     start: "top -53%",
     end: " top -100%",
     scrub: 2,
+  },
+});
+gsap.from(".headingtop", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".headingtop",
+    scroller: "body",
+    start: "top 80%",
+    end: "top 74%",
+    scrub: 2,
+  },
+});
+
+gsap.from(".top-destination .headingtop,.top-destination", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".top-destination",
+    scroller: "body",
+    start: "top 70%",
+    end: "top 64%",
+    scrub: 2,
+  },
+});
+
+gsap.from(".things-todo-heading h3", {
+  y: 50,
+  opacity: 0,
+  duration: 0.6,
+  scrollTrigger: {
+    trigger: ".things-todo-heading",
+    scroller: "body",
+    start: "top 90%",
+    end: "top 80%",
+    scrub: 1,
+  },
+});
+
+gsap.from(".cards-container .card", {
+  scale: 0.8,
+  opacity: 0,
+  duration: 1,
+
+  scrollTrigger: {
+    trigger: ".cards-container",
+    scroller: "body",
+    start: "top 75%",
+    end: "top 70%",
+    scrub: 1,
+  },
+});
+
+gsap.from("#colon1", {
+  y: -70,
+  x: -70,
+  scrollTrigger: {
+    trigger: "#colon1",
+    scroller: "body",
+    start: "top 75%",
+    end: "top 60%",
+    scrub: 1,
+  },
+});
+
+gsap.from("#colon2", {
+  y: 70,
+  x: 70,
+  scrollTrigger: {
+    trigger: "#colon2",
+    scroller: "body",
+    start: "top 95%",
+    end: "top 90%",
+    scrub: 1,
   },
 });
